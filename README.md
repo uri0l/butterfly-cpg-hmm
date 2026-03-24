@@ -80,14 +80,15 @@ CpG island counts and densities (islands per kb) are compared across the three c
 
 ```
 .
-├── read_first.py                          # extracts chrZ, chrW, chr28 from the full genome
-├── ZW28_comparison_cpg_vs_non__10__.py    # CpG vs non-CpG bar plot - 10% threshold
-├── ZW28_comparison_cpg_vs_non__15__.py    # CpG vs non-CpG bar plot - 15% threshold
-├── ZW28_location_10__.py                  # CpG island positions + HMM matrices - 10% threshold
-├── ZW28_locations_remastered_10__.py      # normalized location plot + matrices - 10% threshold
-├── ZW28_locations_remastered_15__.py      # normalized location plot + matrices - 15% threshold
-├── cpg_hmm_complete.py                    # full HMM class with Viterbi decoder and statistical comparison
-├── plots/                                 # pre-generated output figures
+├── scripts/
+│   ├── read_first.py                      # step 1 — chromosome extraction
+│   ├── comparison_cpg_vs_non__10__.py     # step 2 — CpG vs non-CpG, 10% threshold
+│   ├── comparison_cpg_vs_non__15__.py     # step 2 — CpG vs non-CpG, 15% threshold
+│   ├── locations_10.py                    # step 3 — island positions + HMM matrices, 10%
+│   ├── locations_normalized_10.py         # step 3 — normalized location plot, 10%
+│   ├── locations_normalized_15.py         # step 3 — normalized location plot, 15%
+│   └── cpg_hmm_complete.py               # step 4 — full HMM class with Viterbi decoder
+├── plots/
 │   ├── cpg_island_comparison_10.png
 │   ├── cpg_island_comparison_15.png
 │   ├── location_zw28_10.png
