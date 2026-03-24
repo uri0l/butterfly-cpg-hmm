@@ -20,7 +20,3 @@ GCA_933228805.2_ilHipSeme1.2_genomic.fna
 chrZ.fasta
 chrW.fasta
 chr28.fasta
-
-# (Optional) If you have large CSV/Data exports that aren't plots:
-*.csv
-*.tsv
